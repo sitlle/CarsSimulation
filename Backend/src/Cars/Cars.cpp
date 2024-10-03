@@ -1,7 +1,5 @@
 #include "../../Cars/Cars.h"
 
-using namespace CarSettings;
-
 namespace Cars {
     std::vector<Car> cars;
 
@@ -9,16 +7,16 @@ namespace Cars {
         for (auto& car : cars) {
             // update position without turn to left and right
             switch (car.car_direction) {
-                case Direction::Up:
+                case CarSettings::Direction::Up:
                     car.car_settings.position_y++;
                     break;
-                case Direction::Down:
+                case CarSettings::Direction::Down:
                     car.car_settings.position_y--;
                     break;
-                case Direction::Left:
+                case CarSettings::Direction::Left:
                     car.car_settings.position_x--;
                     break;
-                case Direction::Right:
+                case CarSettings::Direction::Right:
                     car.car_settings.position_x++;
                     break;
             }

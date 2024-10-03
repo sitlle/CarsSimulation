@@ -1,4 +1,4 @@
-#include "../../Process/CreatingCars.h"
+#include "../../Process/CreateCars.h"
 #include "../../Cars/Car.h"
 #include "../../Cars/Cars.h"
 #include "../../UserSettings/UserCarSettings.h"
@@ -16,7 +16,5 @@ void CreateCars::CreateRandomCar(CarSettings::Direction direction, CarSettings::
     new_car.car_settings.angle = angle;
     new_car.car_settings.position_x = position_x;
     new_car.car_settings.position_y = position_y;
-    new_car.car_settings.minimal_speed = UserCarSettings::minimal_speed;
-    new_car.car_settings.maximal_speed = UserCarSettings::maximal_speed;
     Cars::cars.push_back(new_car);
 }

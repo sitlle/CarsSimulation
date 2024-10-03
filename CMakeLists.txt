@@ -14,10 +14,12 @@ add_executable(CarsSimulation Backend/main.cpp
         Backend/Cars/CarSettings.h
         Backend/Cars/Cars.h
         Backend/src/Cars/Cars.cpp
-        Backend/Process/CreatingCars.h
-        Backend/src/Cars/CreatingCars.cpp
+        Backend/Process/CreateCars.h
+        Backend/src/Cars/CreateCars.cpp
         Backend/src/UserSettings/UserLightSettings.cpp
         Backend/src/UserSettings/UserLightSettings.cpp
         Backend/UserSettings/UserCarSettings.h
         Backend/src/UserSettings/UserCarSettings.cpp
+        Backend/Random.h
+        Backend/src/Random.cpp
 )

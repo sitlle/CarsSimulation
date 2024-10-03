@@ -4,22 +4,20 @@
 #include <random>
 #include "CarSettings.h"
 
-using namespace CarSettings;
-
 class Car {
 public:
 
-    Settings car_settings;
+    CarSettings::Settings car_settings;
 
-    Direction car_direction = Direction::Up;
+    CarSettings::Direction car_direction = CarSettings::Direction::Up;
 
-    Turn car_turn = Turn::None;
+    CarSettings::Turn car_turn = CarSettings::Turn::None;
 
     Car() = default;
 
     ~Car() = default;
 
-    Car(Settings, Direction, Turn);
+    Car(CarSettings::Settings, CarSettings::Direction, CarSettings::Turn);
 
-    Car(Direction, Turn);
+    Car(CarSettings::Direction, CarSettings::Turn);
 };
