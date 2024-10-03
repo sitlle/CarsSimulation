@@ -10,7 +10,7 @@ void CreateCars::CreateCar(CarSettings::Settings settings, CarSettings::Directio
 }
 
 void CreateCars::CreateRandomCar(CarSettings::Direction direction, CarSettings::Turn turn,
-                                 const int& angle, const double& position_x,
+                                 const double& angle, const double& position_x,
                                  const double& position_y) {
     Car new_car(direction, turn);
     new_car.car_settings.angle = angle;

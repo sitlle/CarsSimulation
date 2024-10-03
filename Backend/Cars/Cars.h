@@ -5,4 +5,6 @@
 
 namespace Cars {
     extern std::vector<Car> cars;
+
+    extern void UpdateCars();
 }

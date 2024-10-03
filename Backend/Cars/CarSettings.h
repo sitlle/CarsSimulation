@@ -4,7 +4,7 @@
 namespace CarSettings {
     struct Settings {
         int32_t car_type = 0;
-        int32_t angle = 0;
+        double angle = 0;
         int32_t minimal_speed = 0;
         int32_t maximal_speed = 0;
         int32_t dist_to_light = 0;
